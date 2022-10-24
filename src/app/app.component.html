@@ -1,0 +1,9 @@
+<div *ngIf="Permissions.Hidden === ('UPLOAD_BUTTON' | permissions)">
+  <button>SHOWN</button>
+  <button>HIDDEN</button>
+  <button>DISABLED</button>
+</div>
+
+<div [class.test]="'UPLOAD_BUTTON' | permissions">
+  <select [appCheckPermission]=""></select>
+</div>
